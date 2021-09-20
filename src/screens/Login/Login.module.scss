@@ -1,0 +1,21 @@
+@use '../../assets/Colors' as c;
+@use '../../assets/Layouts'as l;
+
+.login_box{
+    @include l.centered;
+
+    box-shadow: -2px 2px 6px 0px rgba(90,90,90,0.35) inset;
+    background-color: c.$base_darker_color;
+    border-radius: 10px;
+    display: flex;
+    width:  30%;
+    height: 30%;
+
+    h1{
+        color: c.$font_alternate_color;
+    }
+}
+
+.blue_bg{
+    background-color: c.$base_color;
+}

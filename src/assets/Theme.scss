@@ -1,0 +1,16 @@
+@use 'Colors' as c;
+@use 'Layouts'as l; 
+
+#root{
+    background-color: c.$clean_color;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* Containers */
+
+.container.centered{
+    @include l.container;
+    @include l.centered;
+}
