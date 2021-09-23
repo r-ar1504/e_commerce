@@ -1,7 +1,7 @@
 {
-  "name": "cts",
+  "name": "e_commerce",
   "version": "1.0.0",
-  "description": "Testing differenct React techniques",
+  "description": "Simple E-Commerce Front-End",
   "main": "index.js",
   "author": "Rodolfo Rios",
   "license": "MIT",
@@ -20,6 +20,7 @@
     "@types/lodash": "^4.14.173",
     "@types/react": "^17.0.21",
     "@types/react-dom": "^17.0.9",
+    "@types/react-router-dom": "^5.3.0",
     "@typescript-eslint/eslint-plugin": "^4.31.1",
     "@typescript-eslint/parser": "^4.31.1",
     "babel-eslint": "^10.1.0",
@@ -46,6 +47,7 @@
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^5.3.0",
     "typescript": "^4.4.3"
   }
 }

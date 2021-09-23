@@ -1,0 +1,31 @@
+@use 'Colors'  as c;
+@use 'Layouts' as l; 
+@use 'Fonts'   as f;
+
+
+/* Mobile Styles */
+@include l.mobile{
+
+
+    /* Containers */
+
+    .container.centered{
+        @include l.container;
+        @include l.centered;
+        
+        &.page{
+            @include l.page;
+        }
+    }
+
+
+    /* Fonts */
+
+    p, h1, h2, h3, h4 {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    h1{
+        font-size: 1.2em;
+    }
+}

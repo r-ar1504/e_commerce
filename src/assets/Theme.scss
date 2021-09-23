@@ -1,5 +1,6 @@
-@use 'Colors' as c;
-@use 'Layouts'as l; 
+@use 'Colors'  as c;
+@use 'Layouts' as l; 
+@use 'Fonts'   as f;
 
 #root{
     background-color: c.$clean_color;
@@ -8,9 +9,40 @@
 }
 
 
-/* Containers */
+/* Normal Styles */
+@include l.normal{
 
-.container.centered{
-    @include l.container;
-    @include l.centered;
+    
+    /* Containers */
+
+    .container.centered{
+        @include l.container;
+        @include l.centered;
+
+        &.page{
+            @include l.page;
+        }
+    }
+
+    .container.col-spaced-around{
+        @include l.container;
+        @include l.col-spaced-around;
+
+        &.page{
+            @include l.page;
+        }
+    }
+        
+
+
+    /* Fonts */
+
+    p, h1, h2, h3, h4 {
+        font-family: 'Roboto ital', sans-serif;
+    }
+
+    h1{
+        font-size: 1.7em;
+    }
+    
 }

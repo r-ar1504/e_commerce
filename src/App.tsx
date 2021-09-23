@@ -1,8 +1,13 @@
 import React from 'react';
 import {Login} from './screens';
+import {Switch, BrowserRouter as Router, Route} from 'react-router-dom';
 
 export default function App(){
     return(
-        <Login />
+        <Router>
+            <Switch>
+                <Route path="/" component={Login} />
+            </Switch>
+        </Router>
     )
 }
