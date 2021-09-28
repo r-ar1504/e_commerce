@@ -1,4 +1,5 @@
 import React from 'react';
+import {Home} from '../../components';
 
 import styles from './Login.module.scss';
 import logo from '../../../public/images/logo.png';

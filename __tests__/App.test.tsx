@@ -1,14 +1,18 @@
-import * as React from 'react';
-import {App} from '../src/App';
+import { shallow, ShallowWrapper } from 'enzyme';
 
-let routes = {};
+import * as React from 'react';
+import App from '../src/App';
+
 
 describe( 'App suite', () =>{
 
     it('Should render Router', () => {
 
+        const component: ShallowWrapper = shallow(<App/>);
+
         expect(true).toBeTruthy();
 
+        
     });
 
 });

@@ -9,6 +9,9 @@
       "moduleResolution": "node",
       "sourceMap": true,
       "allowSyntheticDefaultImports": true,
-      "plugins": [{ "name": "typescript-plugin-css-modules" }]
-    }
+      "plugins": [{ "name": "typescript-plugin-css-modules" }],
+      "lib":["dom", "esnext"],
+      "esModuleInterop": true
+    },
+    "exclude": ["node_modules"]
 }

@@ -1,10 +1,23 @@
 const config  = {
     verbose: true,
-    automock: true,
-    moduleFileExtensions: [ 'js', 'test.tsx' ],
+    moduleFileExtensions: [ 'test.tsx', 'js', 'ts', 'tsx' ],
     testMatch: [
         "**/__tests__/*.(ts|tsx|js)"
     ],
+    snapshotSerializers: [ 'enzyme-to-json'],
+    moduleNameMapper: {
+        "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMocks.js",
+        "\\.(scss|less)$": "identity-obj-proxy"
+    },
+    transform:{ '\\.js$': 'ts-jest'},
+    setupFiles: ['raf/polyfill'],
+    preset: 'ts-jest',
+    setupFilesAfterEnv: ['./setupTests.js'],
+    collectCoverage: true,
+    collectCoverageFrom:[
+        "src/**/*.{js,jsx,tsx}"
+    ]
+
 }
 
 module.exports = config;
