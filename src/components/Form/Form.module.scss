@@ -1,0 +1,10 @@
+
+@use '../../assets/Colors'  as c;
+
+.centered{
+    color: c.$font_alternate_color;
+}
+
+.full-width{
+    color: c.$base_darker_color;
+}

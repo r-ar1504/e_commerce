@@ -1,7 +1,8 @@
 const config  = {
     verbose: true,
     moduleFileExtensions: [ 'test.tsx', 'js', 'ts', 'tsx' ],
-    testMatch: [
+    testMatch: [        
+        "src/**/*.{js,jsx,tsx}",
         "**/__tests__/*.(ts|tsx|js)"
     ],
     snapshotSerializers: [ 'enzyme-to-json'],
@@ -12,11 +13,9 @@ const config  = {
     transform:{ '\\.js$': 'ts-jest'},
     setupFiles: ['raf/polyfill'],
     preset: 'ts-jest',
-    setupFilesAfterEnv: ['./setupTests.js'],
     collectCoverage: true,
-    collectCoverageFrom:[
-        "src/**/*.{js,jsx,tsx}"
-    ]
+    setupFilesAfterEnv: ['./setupTests.js'],
+    coveragePathIgnorePatterns: ["<rootDir>/src/index.tsx"]
 
 }
 

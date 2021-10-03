@@ -1,5 +1,7 @@
-import { default as Home } from './Home';
+import { default as LoginBox} from './LoginBox/LoginBox';
+import { default as Form } from './Form/Form';
 
 export {
-    Home
+    LoginBox,
+    Form
 }
