@@ -9,7 +9,7 @@
     "webpack": "webpack ",
     "start": "webpack serve --open --config webpack.dev.js && eslint ./src --ext .ts,.tsx",
     "build": "webpack --config webpack.prod.js",
-    "test": "jest --config jest.config.js"
+    "test": "jest --config jest.config.js --coverage --colors"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
